@@ -87,11 +87,31 @@
   clear: both;
 }
 
+.nav-menu-icon{
+  float: right;
+  margin-left: 500px;
+  margin-top: -3.5rem;
+}
+
 .main {
   margin-top: 30px;
   height: 2000px;
   background-color: grey;
 }
+
+@media screen and (max-width: 800px) {
+  .navtext {
+    visibility:hidden;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-menu-icon {
+    visibility:hidden;
+  }
+}
+
+
 
 /* Underline From Left */
 .hvr-underline-from-left {
@@ -204,6 +224,17 @@ body {
    letter-spacing: 0.3em;
   }
 
+  @media screen and (max-width: 600px) {
+  .title {
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 55px;
+    width: 90%;
+    padding-left: 5rem;
+
+  }
+  }
+
   .color-overlay-blk {
    width: 100%;
    height: 100%;
@@ -299,7 +330,7 @@ body {
 }
 
 .img-left-sm-light {
-   background-color: #fff;
+   background-color: #fcfcfc;
    background-position:left;
    padding-top: 20rem;
    padding-bottom: 20rem;
@@ -316,7 +347,7 @@ body {
 .column-right-lg {
   float: left;
   width: 50%;
-  background-color: #fff;
+  background-color: #fcfcfc;
   background-position: relative;
   background-attachment: fixed;
   padding-bottom: 30rem;
@@ -341,13 +372,13 @@ body {
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .column-right-lg .column-right-lg-text {
-    width: 100%;
+@media screen and (max-width: 600px) {
+  .column-right-lg-text {
+    width: 100% !important;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 .img-left-sm-light {
 /*  flex-wrap: wrap;
   display: flex;
