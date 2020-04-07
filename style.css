@@ -243,7 +243,7 @@ body {
 
 .img-left-sm-light {
    background-color: #fff;
-   background-position: center;
+   background-position: left;
    padding-top: 26%;
    padding-bottom: 26%;
 /*   margin: 0 0;*/
@@ -255,8 +255,7 @@ body {
    background-attachment: fixed;
 /*   background-position: left;*/
   display: flex;
-  overflow: hidden;
-  background-position: left;
+/*  overflow: hidden;*/
   z-index: 1;
 }
 
