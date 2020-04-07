@@ -12,6 +12,7 @@
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  z-index: 100;
 }
 
 /* NAVIGATION */
@@ -27,10 +28,20 @@
 }
 
 .navbar img {
+  width: 24px;
+  height: 24px;
+  float: left;
+  padding-left: 3rem;
+  z-index: 1;
+  box-sizing: content-box;
+}
+
+.navbar-img {
   width: 30px;
   height: 30px;
   float: left;
   padding-left: 3rem;
+  z-index: 1;
 }
 
 .navbar a {
@@ -43,7 +54,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .navbar a:hover {
@@ -75,15 +86,16 @@
 
 .nav-row {}
 
-/*
+
 .nav-row:after{
   content: "";
   display: table;
   clear: both;
-}*/
+}
 
 .main {
   margin-top: 30px;
+  height: 2000px;
 }
 
 /* Underline From Left */
@@ -135,7 +147,6 @@ body {
   margin: 0 auto;
   min-width: 270px;
   color: #414141;
-  letter-spacing: 0.1em;
 
 }
 
@@ -162,7 +173,7 @@ body {
   }
 
   .subtitle {
-  font-size: calc(16px + .2vw);
+  font-size: 16px;
   color: #414141;
   text-align: center;
   min-width: 300px;
@@ -170,11 +181,12 @@ body {
   line-height: 190%;
   margin-top: -1rem;
   font-weight: 420px;
+  letter-spacing: 0.06em;
 }
 
   .title {
    text-align: center;
-   font-size:calc(32px + .4vw);
+   font-size:calc(38px + .4vw);
    color: #212a2f;
    min-width:300px;
    line-height: 120%;
@@ -216,4 +228,102 @@ body {
   }
 
 
-/* 2 col content */
+/* PORTFOLIO CONTENT */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two content blocks, left one slightly smaller */
+.column-left-sm {
+  float: left;
+  width: 45%;
+/*  padding: 10px;*/
+}
+
+.img-left-sm-light {
+   background-color: #fff;
+   background-position: center;
+   padding-top: 26%;
+   padding-bottom: 26%;
+/*   margin: 0 0;*/
+   background-repeat: no-repeat;
+   background-size: 50%;
+/*   max-width: 100%;*/
+/*   display: block;*/
+/*   overflow: hidden;*/
+   background-attachment: fixed;
+/*   background-position: left;*/
+  display: flex;
+  overflow: hidden;
+  background-position: left;
+  z-index: 1;
+}
+
+.column-right-lg {
+  float: left;
+  width: 55%;
+  padding-left: 4rem;
+  margin-top: 14%;
+  margin-bottom: 26%;
+  background-position: relative;
+  background-attachment: fixed;
+/*  padding: 10px;*/
+}
+
+.column-right-lg-text {
+  width: 460px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two content blocks, right one slightly smaller */
+.column-right-sm {
+  float: left;
+  width: 45%;
+/*  padding: 10px;*/
+}
+
+.img-right-sm-drk {
+   background-color: #f5f5f5;
+   background-position: center;
+   padding-top: 26%;
+   padding-bottom: 26%;
+/*   margin: 0 0;*/
+   background-repeat: no-repeat;
+   background-size: 50%;
+/*   max-width: 100%;*/
+/*   display: block;*/
+/*   overflow: hidden;*/
+   background-attachment: fixed;
+/*   background-position: left;*/
+  display: flex;
+  overflow: hidden;
+  background-position: left;
+}
+
+.column-left-lg {
+  margin-top: 12%;
+  float: left;
+  width: 55%;
+  padding-left: 4rem;
+/*  padding: 10px;*/
+}
+
+.column-left-lg-text {
+  width: 460px;
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-left-sm .column-right-lg .img-left-sm-light  {
+    width: 100%;
+  }
+}
