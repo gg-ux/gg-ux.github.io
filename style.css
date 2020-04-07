@@ -243,20 +243,13 @@ body {
 
 .img-left-sm-light {
    background-color: #fff;
-   background-position: middle;
+   background-position: left;
    padding-top: 26%;
    padding-bottom: 26%;
-/*   margin: 0 0;*/
    background-repeat: no-repeat;
-   background-size: 100%;
-/*   background-size: 50%;*/
-/*   max-width: 100%;*/
-/*   display: block;*/
-/*   overflow: hidden;*/
-   background-attachment:inherit;
-/*   background-position: left;*/
+   background-size: 60%;
+   background-attachment:fixed;
   display: flex;
-/*  overflow: hidden;*/
   z-index: 1;
 }
 
