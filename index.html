@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
 
     <!-- Nav bar -->
 
-    <style>
-body {margin:0;}
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-}
-</style>
 <body>
 
 <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <div class="nav-row">
+    <div class="column-nav left-nav">
+  <a href="index.html"><img src="SVG/logo.svg"></a></div>
+    <div class="column-nav right-nav">
+      <div class="navtext-padding">
+  <a class="navtext" href="#home">PORTFOLIO</a>
+  <a class="navtext" href="#news">FUN</a>
+  <a class="navtext" href="#contact">CONTACT</a>
+</div>
+  </div>
+</div>
 </div>
 
 <div class="main">
     <title>Grace Guo</title>
   </head>
-    <h1>Grace Guo</h1>
-    <p>UX designer</p>
-  </body>
-</html>
-  
+
+ <!-- particles.js container -->
+<div id="particles-js"></div>
+
+
+   <!-- scripts -->
+   <script src="particles.js"></script>
+   <script src="js/app2.js"></script>
+
+   <!-- hero banner -->
+
+   <div class="hero-text">
+     <h1 class="title">GRACE GUO</h1>
+     <p class="subtitle">UX designer I guess</p>
+     <p>x x x</p>
+   </div>
 </div>
 
+  </body>
+</html>
 
+</div>
