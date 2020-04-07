@@ -320,3 +320,17 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 600px) {
+.img-left-sm-light {
+  flex-wrap: wrap;
+  width: 100%;
+  background-attachment: contain;
+  background-attachment: fixed;
+  display: flex;
+  display: block;
+  background-size: 100%;
+  background-position: center;
+
+}
+}
