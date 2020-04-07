@@ -244,6 +244,7 @@ body {
 .img-left-sm-light {
    background-color: #fff;
    background-position: left;
+  background-image: url('PNG/flourish-narrow.png');
    padding-top: 26%;
    padding-bottom: 26%;
 /*   margin: 0 0;*/
