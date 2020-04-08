@@ -27,7 +27,7 @@ body {
 /* header animation */
 #particles-js{
   width: 100%;
-  height: calc(460px + 2vw);
+  height: 500px;
   background-color: #f5f5f5;
   background-image: radial-gradient(circle, rgba(255,255,255,1) 100%, rgba(245,245,245,1) 100%);
   background-position: 50% 50%;
@@ -39,7 +39,7 @@ body {
 /* scroll animation */
 .panel {
   /* min height incase content is higher than window height */
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: space-around;
 /*  align-items: center;*/
@@ -411,7 +411,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #0C0C0C;
-  margin-top: 10rem;
+  margin-top: 0rem;
 }
 
   .container-content {
@@ -421,7 +421,8 @@ body {
   padding-top: 7rem;
   background-color: #fcfcfc;
   border-radius: 0px;
-  margin-top: 10rem;
+  margin-top: 0rem;
+
 }
 
   .content-text {
@@ -436,19 +437,30 @@ body {
   .img-container {
     height: 600px;
     width: 600px;
+    margin-top: -4rem;
   }
 }
+
+@media screen and (max-width: 1500px) {
+.panel {
+    min-height: 70vh;
+}
+}
+
+
+
 
 @media screen and (max-width: 1500px) {
 .container-content {
   width: 600px;
   height: 600px;
+  margin-top: -4rem;
 }
 }
 
 @media screen and (max-width: 1500px) {
 .content-text {
-  margin-top: -2rem;
+
 }
 }
 
@@ -458,6 +470,7 @@ body {
   .img-container {
     height: 500px;
     width: 500px;
+
   }
 }
 
@@ -465,6 +478,7 @@ body {
 .container-content {
   width: 500px;
   height: 500px;
+
 }
 }
 
