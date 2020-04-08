@@ -47,6 +47,16 @@ body {
   /* turn above on to see the edge of panels */
 }
 
+.panel-0 {
+  /* min height incase content is higher than window height */
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+/*  align-items: center;*/
+/*outline: 10px solid hotpink;*/
+  /* turn above on to see the edge of panels */
+}
+
 /* colours */
 .color-violet {
   background-color: #7A4EAB;
