@@ -49,7 +49,7 @@ body {
 
 .panel-0 {
   /* min height incase content is higher than window height */
-  min-height: 20vh;
+  min-height: 15vh;
   display: flex;
   justify-content: space-around;
 /*  align-items: center;*/
@@ -281,8 +281,8 @@ body {
   }
 
   .hero-icon {
-    width: 36px;
-    padding: 8px;
+    width: 45px;
+    padding: 12px;
   }
 
 
@@ -290,7 +290,7 @@ body {
   .title {
     flex-wrap: wrap;
     text-align: center;
-    font-size: 36px;
+    font-size: 42px;
     width: 100%;
     font-weight: 200px;
 
@@ -303,6 +303,14 @@ body {
     text-align: center;
     font-size: 18px;
     width: 70%;
+
+  }
+  }
+
+  @media screen and (max-width: 400px) {
+  .hero-icon {
+    width: 48px;
+    padding: 12px;
 
   }
   }
@@ -451,7 +459,7 @@ body {
 
 @media screen and (max-width: 1500px) {
 .panel-0 {
-    min-height: 26vh;
+    min-height: 20vh;
 }
 }
 
@@ -501,7 +509,7 @@ body {
 
 @media screen and (max-width: 1300px) {
 .panel-0 {
-    min-height: 26vh;
+    min-height: 20vh;
 }
 }
 
