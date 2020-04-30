@@ -1,31 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/aos.css" />
+<head>
+  <!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
 
-    <script src="js/aos.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Nav bar -->
-<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <script src="js/aos.js"></script>
+
+  <script>
+    /*
+	Smooth scroll functionality for anchor links (animates the scroll
+	rather than a sudden jump in the page)
+*/
+    $('.js-anchor-link').click(function(e) {
+      e.preventDefault();
+      var target = $($(this).attr('href'));
+      if (target.length) {
+        var scrollTo = target.offset().top;
+        $('body, html').animate({
+          scrollTop: scrollTo + 'px'
+        }, 800);
+      }
+    });
+  </script>
+
+  <!-- Nav bar -->
 
   <header class="header">
     <a href="https://gg-ux.github.io/" class="logo"><img class="hvr-grow" src="SVG/logo.svg"></a>
-    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-      <ul class="menu">
-        <li><a href="#fun"><span class="menu-link hvr-underline-from-left">Portfolio</span></a></li>
-        <li><a href="#fun"><span class="menu-link hvr-underline-from-left">Fun</span></a></li>
-        <li><a href="#contact"><span class="menu-link hvr-underline-from-left">Contact</span></li>
-      </ul>
-    </header>
+    <ul class="menu">
+      <li><a href="#fun"><span class="menu-link hvr-underline-from-left">Portfolio</span></a></li>
+      <li><a href="#fun"><span class="menu-link hvr-underline-from-left">Fun</span></a></li>
+      <li><a href="#contact"><span class="menu-link hvr-underline-from-left">Contact</span></li>
+    </ul>
+  </header>
 
+
+  <div class="main">
+    <title>Flourish</title>
+    </head>
+
+<body>
+<div class="project-sidebar">
+    <ul id="sidenav" class="sidenav hidden">
+      <li><a href="#section-1" class="case-nav-title">Flourish</a></li>
+      <li><a href="#section-2" class="js-anchor-link">Overview</a></li>
+      <li><a href="#section-3" class="js-anchor-link">Section 2</a></li>
+      <li><a href="#section-4" class="js-anchor-link">Section 3</a></li>
+    </ul>
+
+    <div id="section-1" class="section">
 
     </div>
-    </body>
-  </html>
+
+    <div id="section-2" class="section">
+      <h1 class="title-big">Flourish</h1>
+      <span class="role-container-case">
+        <span class="row">
+          <span class="role-label"><b>Duration:</b> 6 months (Apr-Sep 2019)
+          <br><b>Roles:</b> UX design lead, UX researcher
+        <br><b>Team size:</b> 4</span>
+        </span>
+      </span>
+      <h1 class="case-title">Overview</h1>
+      <p class="case-text">
+Catalia Health is a digital health care management company based in San Francisco, California.
+Their core product is an interactive personal assistant robot, Mabu. Catalia Health wanted to
+expand their product line by creating a patient community. The mission was to create a
+HIPAA-compliant product and experience that could help to improve patients' well-being
+through access to a greater patient community and personalized resources.
+<br>
+<br>The goal is that by creating a safe space for patients to engage, patients will feel more informed
+about their condition, more motivated to adhere to their treatment plan, and a heightened sense
+of social belonging that could ultimately lead to better personal health care management.
+I worked as the lead UX designer in a small team of 4. Following an aggressive timeline,
+we were able to successfully research and design a high-fidelity prototype of the app,
+Flourish, in 5 months. </p>
+    </div>
+
+    <div id="section-3" class="section">
+      <h1>Section 3</h1>
+      <a href="#section-1" class="js-anchor-link">Back to section 1</a>
+    </div>
+</div>
+
+    <!-- hero banner -->
+    <div class="hero-text flourish-background">
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="js/scroll-nav.js"></script>
+
+
+</body>
+
+</html>
